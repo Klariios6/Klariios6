@@ -1,6 +1,6 @@
 from random import randint as r
 x= r(1,1000)
-question= (input('what is your guess'))
+question= (input('what is your guess? '))
 answer= int(question)
 tries=0
  
