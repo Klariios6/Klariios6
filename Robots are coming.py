@@ -24,13 +24,7 @@ def place_player():
             else: move_to(ball_x)
             ()       
 
-    place_player()
-
-    while not finished: 
-        moving_player()
-
-
+    place_player()            
+    moving_player()
     remove_from_screen(c) 
-            
-            
     end_graphics()
