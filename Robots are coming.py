@@ -5,13 +5,24 @@ finished= False
 
 
 def place_player():
-    player_x= randint(0,60)
-    player_y= randint(0,47)
-    Circle((10 * player_x + 5, 10 * player_y + 5), 5, filled=True)
-    print(" here i am")
+    player_x= randint(0,60) # the X coordinate of the player
+    player_y= randint(0,47) # the y coordinate of the player 
+    c= Circle((10 * player_x + 5, 10 * player_y + 5), 5, filled=True) 
+    print("here i am")
+    player_physical= int(c)
 
-    def moving_player(): print( "im moving rn")
-    update_when('key_pressed')
+
+    def moving_player(): 
+        while True: 
+            x= +4
+            y= +3  
+            c= +5 
+            ball_x=Circle((x,y), c)
+            move_to= ball_x
+            sleep(.02)
+            if x> 635: break
+            else: move_to(ball_x)
+            ()       
 
     place_player()
 
@@ -19,6 +30,7 @@ def place_player():
         moving_player()
 
 
-        while True: 
+    remove_from_screen(c) 
             
-        end_graphics()
+            
+    end_graphics()
